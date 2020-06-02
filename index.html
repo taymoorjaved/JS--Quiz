@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+
+        <div>
+            <div class="question"></div>
+            <div id="error"></div>
+            <ul class="options"></ul>
+        </div>
+
+        <div class="button-container">
+            <button id="btn-1" class="button" onclick="goToPrevious(event)">Previous</button>
+            <button id="btn-2" class="button" onclick="goToNext(event)">Next</button>
+            <button id="btn-3" class="button" onclick="submit(event)">Submit</button>
+        </div>
+
+        <div class="results" style="display: none;">
+            Total Answers: <strong><span id="result-total"></span></strong> <br/>
+            Correct Answers: <strong><span id="result-correct" style="color: green;"></span></strong> <br/>
+            Success Rate: <strong><span id="success-rate"></span></strong> <br/>
+            <button class="button" onclick="tryagain()" style="margin-top: 20px;">Try Again</button>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
